@@ -3,7 +3,7 @@
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-DJi Radiometric Corrections is a professional aerial image processing system focusing on radiometric calibration and geometric correction of multispectral images captured by drones (DJI Mavic 3M). The project provides a complete image processing pipeline including black level correction, gain and exposure normalization, vignetting correction, and calibration panel detection and recognition.
+DJI Radiometric Corrections is a professional aerial image processing system focusing on radiometric calibration and geometric correction of multispectral images captured by drones (DJI Mavic 3M). The project provides a complete image processing pipeline including black level correction, gain and exposure normalization, vignetting correction, and calibration panel detection and recognition.
 
 ## Main Features
 
@@ -35,8 +35,8 @@ DJi Radiometric Corrections is a professional aerial image processing system foc
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/DJi_Radiometric_corrections.git
-cd DJi_Radiometric_corrections
+git clone https://github.com/LuvMangorange/DJI_Radiometric_Corrections.git
+cd DJI_Radiometric_Corrections
 ```
 
 ### 2. Create Virtual Environment (Optional but Recommended)
@@ -136,7 +136,7 @@ tiff_tool.write_tiff(calibrated, output_path)
 ## Project Structure
 
 ```
-DJi_Radiometric_corrections/
+DJI_Radiometric_Corrections/
 ├── module/                      # Core modules
 │   ├── img_arc/                # Image radiometric correction module
 │   │   ├── img_arc.py         # Main correction functions
@@ -274,7 +274,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) file for 
 
 If you have any questions or suggestions, feel free to contact:
 - 📧 Email: hpc0813@outlook.com
-- 🐛 Issue Tracker: [GitHub Issues](https://github.com/yourusername/DJi_Radiometric_corrections/issues)
+- 🐛 Issue Tracker: [GitHub Issues](https://github.com/LuvMangorange/DJI_Radiometric_Corrections/issues)
 
 ## Changelog
 
