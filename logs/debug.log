@@ -1,0 +1,374 @@
+2026-06-08 09:23:08 CST  logger.py:167 [3519519] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 09:23:16 CST  logger.py:167 [3519647] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 09:23:17 CST  logger.py:167 [3519647] [INFO] Processing band G with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182929_0003_MS_G.TIF
+2026-06-08 09:23:49 CST  logger.py:167 [3519647] [INFO] Detected 5 rectangles
+2026-06-08 09:23:49 CST  logger.py:164 [3519647] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 09:23:49 CST  logger.py:167 [3519647] [INFO] Recognized panel number digit: 1
+2026-06-08 09:23:49 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:23:49 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:23:49 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:23:49 CST  logger.py:167 [3519647] [INFO] 4 potential calibration panels
+2026-06-08 09:24:14 CST  logger.py:167 [3519647] [INFO] formula: dn_pred = 11.642536 * DN + 20.797021
+2026-06-08 09:24:14 CST  logger.py:167 [3519647] [INFO] R² = 0.7924
+2026-06-08 09:24:39 CST  logger.py:167 [3519647] [INFO] G拟合结果: (11.64253572305543, 20.79702122193514, 0.792403246303542)
+2026-06-08 09:24:41 CST  logger.py:167 [3519647] [INFO] Processing band NIR with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_NIR.TIF
+2026-06-08 09:25:12 CST  logger.py:167 [3519647] [INFO] Detected 4 rectangles
+2026-06-08 09:25:12 CST  logger.py:164 [3519647] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 09:25:12 CST  logger.py:167 [3519647] [INFO] Recognized panel number digit: 1
+2026-06-08 09:25:12 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:12 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:12 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:12 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:12 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:12 CST  logger.py:167 [3519647] [INFO] 4 potential calibration panels
+2026-06-08 09:25:13 CST  logger.py:167 [3519647] [INFO] formula: dn_pred = 5.301305 * DN + 8.959683
+2026-06-08 09:25:13 CST  logger.py:167 [3519647] [INFO] R² = 0.8104
+2026-06-08 09:25:13 CST  logger.py:167 [3519647] [INFO] NIR拟合结果: (5.3013052018409255, 8.959683275897685, 0.8104336535746846)
+2026-06-08 09:25:13 CST  logger.py:167 [3519647] [INFO] Processing band R with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_R.TIF
+2026-06-08 09:25:44 CST  logger.py:167 [3519647] [INFO] Detected 4 rectangles
+2026-06-08 09:25:44 CST  logger.py:164 [3519647] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 09:25:44 CST  logger.py:167 [3519647] [INFO] Recognized panel number digit: 1
+2026-06-08 09:25:44 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:44 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:44 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:44 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:25:44 CST  logger.py:167 [3519647] [INFO] 4 potential calibration panels
+2026-06-08 09:25:45 CST  logger.py:167 [3519647] [INFO] formula: dn_pred = 6.959621 * DN + 12.404860
+2026-06-08 09:25:45 CST  logger.py:167 [3519647] [INFO] R² = 0.7577
+2026-06-08 09:25:45 CST  logger.py:167 [3519647] [INFO] R拟合结果: (6.95962100367924, 12.404860172112217, 0.7576872919213251)
+2026-06-08 09:25:45 CST  logger.py:167 [3519647] [INFO] Processing band RE with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_RE.TIF
+2026-06-08 09:26:16 CST  logger.py:167 [3519647] [INFO] Detected 5 rectangles
+2026-06-08 09:26:17 CST  logger.py:164 [3519647] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] Recognized panel number digit: 1
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] 3 potential calibration panels
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] 4 potential calibration panels
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] formula: dn_pred = 6.221480 * DN + 11.434514
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] R² = 0.7627
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] RE拟合结果: (6.221480268141923, 11.434513831421661, 0.7626781678732125)
+2026-06-08 09:26:17 CST  logger.py:167 [3519647] [INFO] multi_reflectance_functions: {'G': (11.64253572305543, 20.79702122193514, 0.792403246303542), 'NIR': (5.3013052018409255, 8.959683275897685, 0.8104336535746846), 'R': (6.95962100367924, 12.404860172112217, 0.7576872919213251), 'RE': (6.221480268141923, 11.434513831421661, 0.7626781678732125)}
+2026-06-08 09:40:49 CST  logger.py:167 [3548071] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 09:41:00 CST  logger.py:167 [3548378] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 09:41:05 CST  logger.py:167 [3548507] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 09:41:08 CST  logger.py:167 [3548677] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:06:23 CST  logger.py:167 [3588711] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:17:18 CST  logger.py:167 [3605640] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:17:24 CST  logger.py:167 [3605788] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:19:44 CST  logger.py:167 [3609509] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:20:06 CST  logger.py:167 [3610154] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:22:00 CST  logger.py:167 [3613220] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:22:08 CST  logger.py:167 [3613490] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:22:14 CST  logger.py:167 [3613733] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:22:31 CST  logger.py:167 [3614193] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:22:40 CST  logger.py:167 [3614476] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:23:05 CST  logger.py:167 [3615167] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:23:18 CST  logger.py:167 [3615644] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:25:09 CST  logger.py:167 [3618763] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:25:56 CST  logger.py:167 [3620058] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:26:58 CST  logger.py:167 [3621686] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:26:58 CST  logger.py:167 [3621686] [INFO] Processing band G with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182929_0003_MS_G.TIF
+2026-06-08 10:27:30 CST  logger.py:167 [3621686] [INFO] Detected 5 rectangles
+2026-06-08 10:27:30 CST  logger.py:164 [3621686] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 10:27:30 CST  logger.py:167 [3621686] [INFO] Recognized panel number digit: 1
+2026-06-08 10:27:30 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:27:30 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:27:30 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:27:30 CST  logger.py:167 [3621686] [INFO] 4 potential calibration panels
+2026-06-08 10:27:31 CST  logger.py:167 [3621686] [INFO] formula: dn_pred = 11.642536 * DN + 20.797021
+2026-06-08 10:27:31 CST  logger.py:167 [3621686] [INFO] R² = 0.7924
+2026-06-08 10:27:31 CST  logger.py:167 [3621686] [INFO] G拟合结果: (11.64253572305543, 20.79702122193514, 0.792403246303542)
+2026-06-08 10:27:31 CST  logger.py:167 [3621686] [INFO] Processing band NIR with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_NIR.TIF
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] Detected 4 rectangles
+2026-06-08 10:28:03 CST  logger.py:164 [3621686] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] Recognized panel number digit: 1
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] 4 potential calibration panels
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] formula: dn_pred = 5.301305 * DN + 8.959683
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] R² = 0.8104
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] NIR拟合结果: (5.3013052018409255, 8.959683275897685, 0.8104336535746846)
+2026-06-08 10:28:03 CST  logger.py:167 [3621686] [INFO] Processing band R with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_R.TIF
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] Detected 4 rectangles
+2026-06-08 10:28:36 CST  logger.py:164 [3621686] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] Recognized panel number digit: 1
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] 4 potential calibration panels
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] formula: dn_pred = 6.959621 * DN + 12.404860
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] R² = 0.7577
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] R拟合结果: (6.95962100367924, 12.404860172112217, 0.7576872919213251)
+2026-06-08 10:28:36 CST  logger.py:167 [3621686] [INFO] Processing band RE with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_RE.TIF
+2026-06-08 10:29:08 CST  logger.py:167 [3621686] [INFO] Detected 5 rectangles
+2026-06-08 10:29:08 CST  logger.py:164 [3621686] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 10:29:08 CST  logger.py:167 [3621686] [INFO] Recognized panel number digit: 1
+2026-06-08 10:29:08 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:29:08 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:29:08 CST  logger.py:167 [3621686] [INFO] 3 potential calibration panels
+2026-06-08 10:29:08 CST  logger.py:167 [3621686] [INFO] 4 potential calibration panels
+2026-06-08 10:29:09 CST  logger.py:167 [3621686] [INFO] formula: dn_pred = 6.221480 * DN + 11.434514
+2026-06-08 10:29:09 CST  logger.py:167 [3621686] [INFO] R² = 0.7627
+2026-06-08 10:29:09 CST  logger.py:167 [3621686] [INFO] RE拟合结果: (6.221480268141923, 11.434513831421661, 0.7626781678732125)
+2026-06-08 10:29:09 CST  logger.py:167 [3621686] [INFO] multi_reflectance_functions: {'G': (11.64253572305543, 20.79702122193514, 0.792403246303542, 416.889), 'NIR': (5.3013052018409255, 8.959683275897685, 0.8104336535746846, 277.192), 'R': (6.95962100367924, 12.404860172112217, 0.7576872919213251, 277.541), 'RE': (6.221480268141923, 11.434513831421661, 0.7626781678732125, 261.083)}
+2026-06-08 10:35:53 CST  logger.py:167 [3637505] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:35:57 CST  logger.py:167 [3637645] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:36:01 CST  logger.py:167 [3637798] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:36:01 CST  logger.py:167 [3637798] [INFO] Processing band G with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182929_0003_MS_G.TIF
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] Detected 5 rectangles
+2026-06-08 10:36:33 CST  logger.py:164 [3637798] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] Recognized panel number digit: 1
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] 4 potential calibration panels
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] formula: dn_pred = 11.250123 * DN + 21.822647
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] R² = 0.7651
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] G拟合结果: (11.250123217722445, 21.822646684642226, 0.7651324071940616)
+2026-06-08 10:36:33 CST  logger.py:167 [3637798] [INFO] Processing band NIR with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_NIR.TIF
+2026-06-08 10:37:04 CST  logger.py:167 [3637798] [INFO] Detected 4 rectangles
+2026-06-08 10:37:04 CST  logger.py:164 [3637798] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 10:37:04 CST  logger.py:167 [3637798] [INFO] Recognized panel number digit: 1
+2026-06-08 10:37:04 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:04 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:04 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:04 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:04 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:04 CST  logger.py:167 [3637798] [INFO] 4 potential calibration panels
+2026-06-08 10:37:05 CST  logger.py:167 [3637798] [INFO] formula: dn_pred = 5.225680 * DN + 9.827664
+2026-06-08 10:37:05 CST  logger.py:167 [3637798] [INFO] R² = 0.7306
+2026-06-08 10:37:05 CST  logger.py:167 [3637798] [INFO] NIR拟合结果: (5.225680451744146, 9.827663604206627, 0.7306461014844976)
+2026-06-08 10:37:05 CST  logger.py:167 [3637798] [INFO] Processing band R with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_R.TIF
+2026-06-08 10:37:36 CST  logger.py:167 [3637798] [INFO] Detected 4 rectangles
+2026-06-08 10:37:36 CST  logger.py:164 [3637798] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 10:37:36 CST  logger.py:167 [3637798] [INFO] Recognized panel number digit: 1
+2026-06-08 10:37:36 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:36 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:36 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:36 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:37:36 CST  logger.py:167 [3637798] [INFO] 4 potential calibration panels
+2026-06-08 10:37:37 CST  logger.py:167 [3637798] [INFO] formula: dn_pred = 6.830133 * DN + 12.844868
+2026-06-08 10:37:37 CST  logger.py:167 [3637798] [INFO] R² = 0.7354
+2026-06-08 10:37:37 CST  logger.py:167 [3637798] [INFO] R拟合结果: (6.830132967869606, 12.84486771280871, 0.7353885674838747)
+2026-06-08 10:37:37 CST  logger.py:167 [3637798] [INFO] Processing band RE with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_RE.TIF
+2026-06-08 10:38:08 CST  logger.py:167 [3637798] [INFO] Detected 5 rectangles
+2026-06-08 10:38:08 CST  logger.py:164 [3637798] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 10:38:08 CST  logger.py:167 [3637798] [INFO] Recognized panel number digit: 1
+2026-06-08 10:38:08 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:38:08 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:38:08 CST  logger.py:167 [3637798] [INFO] 3 potential calibration panels
+2026-06-08 10:38:08 CST  logger.py:167 [3637798] [INFO] 4 potential calibration panels
+2026-06-08 10:38:09 CST  logger.py:167 [3637798] [INFO] formula: dn_pred = 6.215119 * DN + 11.709132
+2026-06-08 10:38:09 CST  logger.py:167 [3637798] [INFO] R² = 0.7328
+2026-06-08 10:38:09 CST  logger.py:167 [3637798] [INFO] RE拟合结果: (6.215119427103723, 11.709132138750213, 0.7328410594904313)
+2026-06-08 10:38:09 CST  logger.py:167 [3637798] [INFO] multi_reflectance_functions: {'G': (11.250123217722445, 21.822646684642226, 0.7651324071940616, 416.889), 'NIR': (5.225680451744146, 9.827663604206627, 0.7306461014844976, 277.192), 'R': (6.830132967869606, 12.84486771280871, 0.7353885674838747, 277.541), 'RE': (6.215119427103723, 11.709132138750213, 0.7328410594904313, 261.083)}
+2026-06-08 10:57:49 CST  logger.py:167 [3671929] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:58:38 CST  logger.py:167 [3673307] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 10:59:10 CST  logger.py:167 [3674133] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 12:06:49 CST  logger.py:167 [3778937] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 12:07:31 CST  logger.py:167 [3780342] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 12:07:32 CST  logger.py:167 [3780342] [INFO] Processing band G with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182929_0003_MS_G.TIF
+2026-06-08 12:08:02 CST  logger.py:167 [3780342] [INFO] Detected 5 rectangles
+2026-06-08 12:08:02 CST  logger.py:164 [3780342] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 12:08:02 CST  logger.py:167 [3780342] [INFO] Recognized panel number digit: 1
+2026-06-08 12:08:02 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:08:02 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:08:02 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:08:02 CST  logger.py:167 [3780342] [INFO] 4 potential calibration panels
+2026-06-08 12:08:03 CST  logger.py:167 [3780342] [INFO] formula: rho_pred = 0.068011 * DN + -1.368062
+2026-06-08 12:08:03 CST  logger.py:167 [3780342] [INFO] R² = 0.7651
+2026-06-08 12:08:03 CST  logger.py:167 [3780342] [INFO] G拟合结果: (0.06801102462493389, -1.3680620231671783, 0.765132407194062)
+2026-06-08 12:08:03 CST  logger.py:167 [3780342] [INFO] Processing band NIR with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_NIR.TIF
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] Detected 4 rectangles
+2026-06-08 12:08:33 CST  logger.py:164 [3780342] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] Recognized panel number digit: 1
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] 4 potential calibration panels
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] formula: rho_pred = 0.139818 * DN + -1.244645
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] R² = 0.7306
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] NIR拟合结果: (0.13981836590115912, -1.2446453606031997, 0.7306461014844969)
+2026-06-08 12:08:33 CST  logger.py:167 [3780342] [INFO] Processing band R with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_R.TIF
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] Detected 4 rectangles
+2026-06-08 12:09:04 CST  logger.py:164 [3780342] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] Recognized panel number digit: 1
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] 4 potential calibration panels
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] formula: rho_pred = 0.107668 * DN + -1.252955
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] R² = 0.7354
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] R拟合结果: (0.10766826516310864, -1.252954564949317, 0.7353885674838749)
+2026-06-08 12:09:04 CST  logger.py:167 [3780342] [INFO] Processing band RE with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_RE.TIF
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] Detected 5 rectangles
+2026-06-08 12:09:35 CST  logger.py:164 [3780342] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] Recognized panel number digit: 1
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] 3 potential calibration panels
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] 4 potential calibration panels
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] formula: rho_pred = 0.117913 * DN + -1.248446
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] R² = 0.7328
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] RE拟合结果: (0.11791262711615169, -1.2484464773700334, 0.7328410594904318)
+2026-06-08 12:09:35 CST  logger.py:167 [3780342] [INFO] multi_reflectance_functions: {'G': (0.06801102462493389, -1.3680620231671783, 0.765132407194062, 416.889), 'NIR': (0.13981836590115912, -1.2446453606031997, 0.7306461014844969, 277.192), 'R': (0.10766826516310864, -1.252954564949317, 0.7353885674838749, 277.541), 'RE': (0.11791262711615169, -1.2484464773700334, 0.7328410594904318, 261.083)}
+2026-06-08 13:32:27 CST  logger.py:167 [3883845] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 13:32:27 CST  logger.py:167 [3883845] [INFO] Processing band G with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182929_0003_MS_G.TIF
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] Detected 5 rectangles
+2026-06-08 13:33:01 CST  logger.py:164 [3883845] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] Recognized panel number digit: 1
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] 4 potential calibration panels
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] formula: rho_pred = 0.068011 * DN + -1.368062
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] R² = 0.7651
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] G拟合结果: (0.06801102462493389, -1.3680620231671783, 0.765132407194062)
+2026-06-08 13:33:01 CST  logger.py:167 [3883845] [INFO] Processing band NIR with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_NIR.TIF
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] Detected 4 rectangles
+2026-06-08 13:33:34 CST  logger.py:164 [3883845] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] Recognized panel number digit: 1
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] 4 potential calibration panels
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] formula: rho_pred = 0.139818 * DN + -1.244645
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] R² = 0.7306
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] NIR拟合结果: (0.13981836590115912, -1.2446453606031997, 0.7306461014844969)
+2026-06-08 13:33:34 CST  logger.py:167 [3883845] [INFO] Processing band R with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_R.TIF
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] Detected 4 rectangles
+2026-06-08 13:34:07 CST  logger.py:164 [3883845] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] Recognized panel number digit: 1
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] 4 potential calibration panels
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] formula: rho_pred = 0.107668 * DN + -1.252955
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] R² = 0.7354
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] R拟合结果: (0.10766826516310864, -1.252954564949317, 0.7353885674838749)
+2026-06-08 13:34:07 CST  logger.py:167 [3883845] [INFO] Processing band RE with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_RE.TIF
+2026-06-08 13:34:40 CST  logger.py:167 [3883845] [INFO] Detected 5 rectangles
+2026-06-08 13:34:40 CST  logger.py:164 [3883845] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 13:34:40 CST  logger.py:167 [3883845] [INFO] Recognized panel number digit: 1
+2026-06-08 13:34:40 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:34:40 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:34:40 CST  logger.py:167 [3883845] [INFO] 3 potential calibration panels
+2026-06-08 13:34:40 CST  logger.py:167 [3883845] [INFO] 4 potential calibration panels
+2026-06-08 13:34:41 CST  logger.py:167 [3883845] [INFO] formula: rho_pred = 0.117913 * DN + -1.248446
+2026-06-08 13:34:41 CST  logger.py:167 [3883845] [INFO] R² = 0.7328
+2026-06-08 13:34:41 CST  logger.py:167 [3883845] [INFO] RE拟合结果: (0.11791262711615169, -1.2484464773700334, 0.7328410594904318)
+2026-06-08 13:34:41 CST  logger.py:167 [3883845] [INFO] multi_reflectance_functions: {'G': (0.06801102462493389, -1.3680620231671783, 0.765132407194062, 416.889), 'NIR': (0.13981836590115912, -1.2446453606031997, 0.7306461014844969, 277.192), 'R': (0.10766826516310864, -1.252954564949317, 0.7353885674838749, 277.541), 'RE': (0.11791262711615169, -1.2484464773700334, 0.7328410594904318, 261.083)}
+2026-06-08 14:47:53 CST  logger.py:167 [4006649] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 14:47:54 CST  logger.py:167 [4006649] [INFO] Processing band G with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182929_0003_MS_G.TIF
+2026-06-08 14:48:05 CST  logger.py:167 [4007011] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 14:48:05 CST  logger.py:167 [4007011] [INFO] Processing band G with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182929_0003_MS_G.TIF
+2026-06-08 14:48:36 CST  logger.py:167 [4007011] [INFO] Detected 5 rectangles
+2026-06-08 14:48:36 CST  logger.py:164 [4007011] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 14:48:36 CST  logger.py:167 [4007011] [INFO] Recognized panel number digit: 1
+2026-06-08 14:48:36 CST  logger.py:167 [4007011] [INFO] 3 potential calibration panels
+2026-06-08 14:48:36 CST  logger.py:167 [4007011] [INFO] 3 potential calibration panels
+2026-06-08 14:48:36 CST  logger.py:167 [4007011] [INFO] 3 potential calibration panels
+2026-06-08 14:48:36 CST  logger.py:167 [4007011] [INFO] 4 potential calibration panels
+2026-06-08 14:56:45 CST  logger.py:167 [4020801] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 14:56:50 CST  logger.py:167 [4020991] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 15:17:20 CST  logger.py:167 [4053420] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 15:17:54 CST  logger.py:167 [4054315] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 15:18:14 CST  logger.py:167 [4054936] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 15:18:14 CST  logger.py:167 [4054936] [INFO] Processing band G with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182929_0003_MS_G.TIF
+2026-06-08 15:18:45 CST  logger.py:167 [4054936] [INFO] Detected 5 rectangles
+2026-06-08 15:18:46 CST  logger.py:164 [4054936] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 15:18:46 CST  logger.py:167 [4054936] [INFO] Recognized panel number digit: 1
+2026-06-08 15:18:46 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:18:46 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:18:46 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:18:46 CST  logger.py:167 [4054936] [INFO] 4 potential calibration panels
+2026-06-08 15:22:42 CST  logger.py:167 [4054936] [INFO] formula: rho_pred = 0.017393 * DN + 0.000000
+2026-06-08 15:22:42 CST  logger.py:167 [4054936] [INFO] R² = 0.9720
+2026-06-08 15:23:03 CST  logger.py:167 [4054936] [INFO] G拟合结果: (0.01739305760189852, 0.0, 0.9719991895497846)
+2026-06-08 15:23:14 CST  logger.py:167 [4054936] [INFO] Processing band NIR with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_NIR.TIF
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] Detected 4 rectangles
+2026-06-08 15:23:44 CST  logger.py:164 [4054936] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] Recognized panel number digit: 1
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] 4 potential calibration panels
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] formula: rho_pred = 0.038382 * DN + 0.000000
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] R² = 0.9772
+2026-06-08 15:23:44 CST  logger.py:167 [4054936] [INFO] NIR拟合结果: (0.03838218419508549, 0.0, 0.977237600474665)
+2026-06-08 15:24:10 CST  logger.py:167 [4054936] [INFO] Processing band R with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_R.TIF
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] Detected 4 rectangles
+2026-06-08 15:24:40 CST  logger.py:164 [4054936] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] Recognized panel number digit: 1
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] 4 potential calibration panels
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] formula: rho_pred = 0.029180 * DN + 0.000000
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] R² = 0.9722
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] R拟合结果: (0.029180267476722595, 0.0, 0.9721590206205623)
+2026-06-08 15:24:40 CST  logger.py:167 [4054936] [INFO] Processing band RE with image /home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_RE.TIF
+2026-06-08 15:25:10 CST  logger.py:167 [4054936] [INFO] Detected 5 rectangles
+2026-06-08 15:25:10 CST  logger.py:164 [4054936] [DEBUG] Recognized digit '1' at angle 90
+2026-06-08 15:25:10 CST  logger.py:167 [4054936] [INFO] Recognized panel number digit: 1
+2026-06-08 15:25:10 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:25:10 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:25:10 CST  logger.py:167 [4054936] [INFO] 3 potential calibration panels
+2026-06-08 15:25:10 CST  logger.py:167 [4054936] [INFO] 4 potential calibration panels
+2026-06-08 15:25:11 CST  logger.py:167 [4054936] [INFO] formula: rho_pred = 0.031878 * DN + 0.000000
+2026-06-08 15:25:11 CST  logger.py:167 [4054936] [INFO] R² = 0.9694
+2026-06-08 15:25:11 CST  logger.py:167 [4054936] [INFO] RE拟合结果: (0.03187751127861242, 0.0, 0.9693741193631299)
+2026-06-08 15:25:24 CST  logger.py:167 [4054936] [INFO] multi_reflectance_functions: {'G': (0.01739305760189852, 0.0, 0.9719991895497846, 416.889), 'NIR': (0.03838218419508549, 0.0, 0.977237600474665, 277.192), 'R': (0.029180267476722595, 0.0, 0.9721590206205623, 277.541), 'RE': (0.03187751127861242, 0.0, 0.9693741193631299, 261.083)}
+2026-06-08 17:39:37 CST  logger.py:167 [290826] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 17:40:02 CST  logger.py:167 [291556] [INFO] Loaded reflectance calibration from /home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml
+2026-06-08 17:40:03 CST  logger.py:167 [291556] [INFO] Processing band G with image /home/algorithm/Downloads/147大北农基地棉花-20260603-118m-原始影像/DJI_202606031422_008/DJI_20260603142427_0003_MS_G.TIF
+2026-06-08 17:40:05 CST  logger.py:167 [291556] [INFO] Detected 5 rectangles
+2026-06-08 17:40:05 CST  logger.py:164 [291556] [DEBUG] Recognized digit '1' at angle 0
+2026-06-08 17:40:05 CST  logger.py:167 [291556] [INFO] Recognized panel number digit: 1
+2026-06-08 17:40:05 CST  logger.py:167 [291556] [INFO] 3 potential calibration panels
+2026-06-08 17:40:05 CST  logger.py:167 [291556] [INFO] 3 potential calibration panels
+2026-06-08 17:40:05 CST  logger.py:167 [291556] [INFO] 4 potential calibration panels
+2026-06-08 17:40:06 CST  logger.py:167 [291556] [INFO] formula: rho_pred = 0.000787 * DN + 0.000000
+2026-06-08 17:40:06 CST  logger.py:167 [291556] [INFO] R² = 0.9943
+2026-06-08 17:40:06 CST  logger.py:167 [291556] [INFO] G拟合结果: (0.0007870639376332018, 0.0, 0.9943249225213424)
+2026-06-08 17:40:06 CST  logger.py:167 [291556] [INFO] Processing band NIR with image /home/algorithm/Downloads/147大北农基地棉花-20260603-118m-原始影像/DJI_202606031422_008/DJI_20260603142427_0003_MS_NIR.TIF
+2026-06-08 17:40:07 CST  logger.py:167 [291556] [INFO] Detected 5 rectangles
+2026-06-08 17:40:07 CST  logger.py:164 [291556] [DEBUG] Recognized digit '1' at angle 0
+2026-06-08 17:40:07 CST  logger.py:167 [291556] [INFO] Recognized panel number digit: 1
+2026-06-08 17:40:07 CST  logger.py:167 [291556] [INFO] 3 potential calibration panels
+2026-06-08 17:40:07 CST  logger.py:167 [291556] [INFO] 4 potential calibration panels
+2026-06-08 17:40:08 CST  logger.py:167 [291556] [INFO] formula: rho_pred = 0.002294 * DN + 0.000000
+2026-06-08 17:40:08 CST  logger.py:167 [291556] [INFO] R² = 0.9936
+2026-06-08 17:40:08 CST  logger.py:167 [291556] [INFO] NIR拟合结果: (0.002293984171780267, 0.0, 0.993638999267603)
+2026-06-08 17:40:08 CST  logger.py:167 [291556] [INFO] Processing band R with image /home/algorithm/Downloads/147大北农基地棉花-20260603-118m-原始影像/DJI_202606031422_008/DJI_20260603142427_0003_MS_R.TIF
+2026-06-08 17:40:10 CST  logger.py:167 [291556] [INFO] Detected 5 rectangles
+2026-06-08 17:40:10 CST  logger.py:164 [291556] [DEBUG] Recognized digit '1' at angle 0
+2026-06-08 17:40:10 CST  logger.py:167 [291556] [INFO] Recognized panel number digit: 1
+2026-06-08 17:40:10 CST  logger.py:167 [291556] [INFO] 3 potential calibration panels
+2026-06-08 17:40:10 CST  logger.py:167 [291556] [INFO] 4 potential calibration panels
+2026-06-08 17:40:10 CST  logger.py:167 [291556] [INFO] formula: rho_pred = 0.001115 * DN + 0.000000
+2026-06-08 17:40:10 CST  logger.py:167 [291556] [INFO] R² = 0.9974
+2026-06-08 17:40:10 CST  logger.py:167 [291556] [INFO] R拟合结果: (0.0011153456037210439, 0.0, 0.9973701670908904)
+2026-06-08 17:40:10 CST  logger.py:167 [291556] [INFO] Processing band RE with image /home/algorithm/Downloads/147大北农基地棉花-20260603-118m-原始影像/DJI_202606031422_008/DJI_20260603142427_0003_MS_RE.TIF
+2026-06-08 17:40:12 CST  logger.py:167 [291556] [INFO] Detected 6 rectangles
+2026-06-08 17:40:12 CST  logger.py:164 [291556] [DEBUG] Recognized digit '1' at angle 0
+2026-06-08 17:40:12 CST  logger.py:167 [291556] [INFO] Recognized panel number digit: 1
+2026-06-08 17:40:12 CST  logger.py:167 [291556] [INFO] 3 potential calibration panels
+2026-06-08 17:40:12 CST  logger.py:167 [291556] [INFO] 4 potential calibration panels
+2026-06-08 17:40:13 CST  logger.py:167 [291556] [INFO] formula: rho_pred = 0.001514 * DN + 0.000000
+2026-06-08 17:40:13 CST  logger.py:167 [291556] [INFO] R² = 0.9981
+2026-06-08 17:40:13 CST  logger.py:167 [291556] [INFO] RE拟合结果: (0.001513508309728556, 0.0, 0.9980927362158428)
+2026-06-08 17:40:13 CST  logger.py:167 [291556] [INFO] multi_reflectance_functions: {'G': (0.0007870639376332018, 0.0, 0.9943249225213424, 6993.398), 'NIR': (0.002293984171780267, 0.0, 0.993638999267603, 3744.486), 'R': (0.0011153456037210439, 0.0, 0.9973701670908904, 5450.949), 'RE': (0.001513508309728556, 0.0, 0.9980927362158428, 4014.929)}

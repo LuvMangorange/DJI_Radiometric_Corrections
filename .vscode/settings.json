@@ -1,0 +1,27 @@
+{
+    "python.testing.pytestArgs": [
+        "-v",
+        "-s",
+        "./test",
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "pylint.importStrategy": "fromEnvironment",
+    "pylint.args": [
+        "--disable=no-name-in-module",
+        "--disable=C0116,C0413,C0103,C0114,C0115,W0612,E1130,W0621,C3001,W0640,W0102,C0301,W0718,W0246,C0415,W1203,W0622,W0511,W0702,W1309,W0641,R0914",
+        "--generated-members=cv2.*"
+    ],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true,
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+}

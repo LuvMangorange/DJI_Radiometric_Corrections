@@ -1,0 +1,120 @@
+panels:
+  - panel_number: 4
+    products:
+      - product_code: 892032JYS2505090013
+        reflectance_level: low
+        spectral_data:
+          blue_450nm: 0.2723
+          green_560nm: 0.2434
+          red_650nm: 0.2313
+          red_edge_730nm: 0.2308
+          nir_840nm: 0.2156
+          rgb_380_780nm: 0.2457
+      - product_code: 892032JYS2505090014
+        reflectance_level: mid
+        spectral_data:
+          blue_450nm: 0.5278
+          green_560nm: 0.4979
+          red_650nm: 0.4843
+          red_edge_730nm: 0.487
+          nir_840nm: 0.467
+          rgb_380_780nm: 0.5009
+      - product_code: 892032JYS2505090015
+        reflectance_level: high
+        spectral_data:
+          blue_450nm: 0.781
+          green_560nm: 0.7626
+          red_650nm: 0.7531
+          red_edge_730nm: 0.7592
+          nir_840nm: 0.744
+          rgb_380_780nm: 0.7647
+
+  - panel_number: 2
+    products:
+      - product_code: 892032JYS2601299050
+        reflectance_level: low
+        spectral_data:
+          blue_450nm: 0.2627
+          green_560nm: 0.2476
+          red_650nm: 0.2405
+          red_edge_730nm: 0.2363
+          nir_840nm: 0.2208
+          rgb_380_780nm: 0.2479
+      - product_code: 892032JYS2601299051
+        reflectance_level: mid
+        spectral_data:
+          blue_450nm: 0.5163
+          green_560nm: 0.4988
+          red_650nm: 0.4963
+          red_edge_730nm: 0.5027
+          nir_840nm: 0.4859
+          rgb_380_780nm: 0.5037
+      - product_code: 892032JYS2601299052
+        reflectance_level: high
+        spectral_data:
+          blue_450nm: 0.7558
+          green_560nm: 0.7385
+          red_650nm: 0.7337
+          red_edge_730nm: 0.7369
+          nir_840nm: 0.7207
+          rgb_380_780nm: 0.7398
+
+  - panel_number: 3
+    products:
+      - product_code: 892032JYS2601299053
+        reflectance_level: low
+        spectral_data:
+          blue_450nm: 0.2685
+          green_560nm: 0.2552
+          red_650nm: 0.2502
+          red_edge_730nm: 0.2538
+          nir_840nm: 0.2401
+          rgb_380_780nm: 0.2569
+      - product_code: 892032JYS2601299054
+        reflectance_level: mid
+        spectral_data:
+          blue_450nm: 0.5124
+          green_560nm: 0.4945
+          red_650nm: 0.491
+          red_edge_730nm: 0.497
+          nir_840nm: 0.4818
+          rgb_380_780nm: 0.4991
+      - product_code: 892032JYS2601299055
+        reflectance_level: high
+        spectral_data:
+          blue_450nm: 0.7672
+          green_560nm: 0.7497
+          red_650nm: 0.744
+          red_edge_730nm: 0.7458
+          nir_840nm: 0.7285
+          rgb_380_780nm: 0.7503
+
+  - panel_number: 1
+    products:
+      - product_code: 892032JYS2604299050
+        reflectance_level: low
+        spectral_data:
+          blue_450nm: 0.2563
+          green_560nm: 0.238
+          red_650nm: 0.2341
+          red_edge_730nm: 0.2359
+          nir_840nm: 0.2228
+          rgb_380_780nm: 0.2421
+      - product_code: 892032JYS2604299051
+        reflectance_level: mid
+        spectral_data:
+          blue_450nm: 0.5081
+          green_560nm: 0.4875
+          red_650nm: 0.4834
+          red_edge_730nm: 0.4876
+          nir_840nm: 0.4705
+          rgb_380_780nm: 0.4902
+      - product_code: 892032JYS2604299052
+        reflectance_level: high
+        spectral_data:
+          blue_450nm: 0.7725
+          green_560nm: 0.7577
+          red_650nm: 0.7567
+          red_edge_730nm: 0.7611
+          nir_840nm: 0.7484
+          rgb_380_780nm: 0.7599

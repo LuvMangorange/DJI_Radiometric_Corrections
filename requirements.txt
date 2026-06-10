@@ -1,0 +1,19 @@
+opencv-python
+xmltodict
+pyexiftool
+pytz
+numpy<1.28.0,>=1.21.6
+Pillow 
+imutils
+ddddocr 
+pytest
+pyyaml
+scikit-learn
+opencv-python
+pycocotools
+numpy
+matplotlib
+torch
+torchvision
+# torchaudio
+git+https://github.com/facebookresearch/segment-anything.git

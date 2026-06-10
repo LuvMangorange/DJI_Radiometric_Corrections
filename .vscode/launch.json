@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File (Multi-Process)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "10",
+                "PYDEVD_USE_ASYNCIO_DEBUGGER": "1",
+                // 关键：启用多进程调试的环境变量
+                "PYDEVD_ENABLE_PYDEV_DEBUGGER": "1",
+                "PYDEVD_ATTACH_TIMEOUT": "30"
+            },
+            "gevent": false,
+            // 核心配置：允许调试子进程
+            "subProcess": true,
+        }
+    ]
+}
