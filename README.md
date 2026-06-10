@@ -15,9 +15,9 @@ DJI Radiometric Corrections is a professional aerial image processing system foc
 - **White Balance**: Automatic or manual white balance adjustment
 
 ### 2. Calibration Panel Detection (detect_panel)
-- **Automatic Panel Detection**: Identify calibration panels in images
-- **OCR Digit Recognition**: Automatically recognize numbers on panels
-- **Rectangle Detection**: Detect rectangles and geometric shapes using advanced algorithms
+- **Automatic Panel Detection**: Identify calibration panels in images using SAM segmentation
+- **OCR Digit Recognition**: Automatically recognize numbers on panels using DDDDOCR
+- **Advanced Segmentation**: Leverage Meta's Segment Anything Model for robust panel region extraction
 - **EXIF Metadata Processing**: Extract and process camera metadata
 
 ### 3. Utility Functions (utils)
@@ -58,11 +58,11 @@ Main dependencies include:
 - **opencv-python**: Image processing
 - **numpy**: Numerical computation
 - **Pillow**: Image manipulation
-- **PyTorch & TorchVision**: Deep learning (for object detection)
+- **PyTorch & TorchVision**: Deep learning framework (for object detection)
 - **scikit-learn**: Machine learning algorithms
-- **ddddocr**: OCR text recognition
+- **ddddocr**: OCR text recognition for automatic calibration panel digit recognition
 - **pyexiftool**: EXIF metadata processing
-- **segment-anything**: SAM segmentation model (Facebook Research)
+- **segment-anything (SAM)**: Meta's Segment Anything Model for advanced image segmentation and panel region detection
 
 ## Usage Guide
 
@@ -228,23 +228,50 @@ Project configuration files are stored in the `configs/` directory. Adjust param
 
 ## Known Limitations
 
+### DDDDOCR (Digit Recognition)
 - OCR recognition may be inaccurate in low light or blurry conditions
+- Best performance requires clear, high-contrast digit images
+- Panel digits should be at least 20×20 pixels for reliable recognition
+
+### SAM Model (Panel Segmentation)
+- SAM model requires significant GPU memory (~11GB for base model)
+- First inference on a device may be slower due to model initialization
+- Works best with clear panel boundaries; heavily obscured panels may fail detection
 - Detection algorithm has certain requirements for panel size (recommended 5% or more of image area)
+
+### General
 - Some special EXIF data formats may not be correctly parsed
+- Performance varies based on image quality, lighting conditions, and panel visibility
 
 ## Troubleshooting
 
-### Problem 1: ImportError - Cannot import SAM model
-**Solution**: Ensure SAM is installed:
+### Problem 1: ImportError - Cannot import SAM model or segment_anything
+**Solution**: Ensure SAM is installed correctly:
 ```bash
 pip install git+https://github.com/facebookresearch/segment-anything.git
+# For GPU support with CUDA
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 ```
 
-### Problem 2: OCR recognition failure
-**Solution**: Check image quality and contrast, try adjusting threshold parameters.
+**Note**: SAM model files (checkpoint) are downloaded automatically on first use. Ensure you have internet connectivity and ~500MB disk space.
 
-### Problem 3: Memory overflow
-**Solution**: Reduce `downscale_height` or use batch processing to split large images.
+### Problem 2: SAM model OutOfMemoryError (CUDA)
+**Solution**: 
+- Reduce image size using `downscale_height` parameter
+- Use CPU inference if GPU memory is insufficient (slower but avoids OOM)
+- Close other GPU applications to free memory
+
+### Problem 3: DDDDOCR recognition failure
+**Solution**: 
+- Check image quality and contrast
+- Ensure calibration panel digits are clearly visible
+- Try adjusting preprocessing parameters (blur, threshold)
+- Ensure panel size is at least 5% of image area for detection
+
+### Problem 4: Memory overflow
+**Solution**: 
+- Reduce `downscale_height` or use batch processing to split large images
+- Monitor memory usage with system tools during processing
 
 ## Contributing Guide
 
