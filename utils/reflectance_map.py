@@ -29,9 +29,7 @@ class ReflectanceMap:
         """
         if calibration_yaml_path is None:
             # Default to cfg directory
-            calibration_yaml_path = (
-                "/home/algorithm/projects/img-arc/configs/spectral_reflectance.yaml"
-            )
+            calibration_yaml_path = "./configs/spectral_reflectance.yaml"
 
         self.calibration_path = Path(calibration_yaml_path)
 

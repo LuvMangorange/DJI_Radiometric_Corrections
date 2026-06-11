@@ -20,7 +20,7 @@ def test_relative_radiance_by_cam():
 
     from module.img_arc import to_relative_radiance_by_cam
 
-    output_dir = "/home/algorithm/projects/img-arc/output"
+    output_dir = "./output"
     for file in os.listdir(output_dir):
         if file.endswith(".TIF"):
             file_path = os.path.join(output_dir, file)
@@ -57,8 +57,10 @@ def test_absolute_radiance_by_panel():
     if current_dir not in sys.path:
         sys.path.append(current_dir)
 
-    cd_data_dir = "/home/algorithm/Downloads/147DaNorthAg Base Cotton-20260603-118m-Original Image/DJI_202606031422_008"
-    cd_output_dir = "/home/algorithm/Downloads/output/DJI_202606031422_008"
+    cd_data_dir = (
+        "./147DaNorthAg Base Cotton-20260603-118m-Original Image/DJI_202606031422_008"
+    )
+    cd_output_dir = "./output/DJI_202606031422_008"
     closest_image = take_closest_image(cd_data_dir)
     print(closest_image)
 
@@ -125,8 +127,8 @@ def test_absolute_radiance_by_panel():
         multi_reflectance_functions[band_name] = (*fit_result, panel_irradiance)
     logger.info(f"multi_reflectance_functions: {multi_reflectance_functions}")
 
-    data_dir = "/home/algorithm/Downloads/147DaNorthAg Base Cotton-20260603-118m-Original Image/DJI_202606031455_010_147DaNorthAg Base"
-    output_dir = "/home/algorithm/Downloads/output/DJI_202606031455_010_147DaNorthAg Base"
+    data_dir = "./Downloads/147DaNorthAg Base Cotton-20260603-118m-Original Image/DJI_202606031455_010_147DaNorthAg Base"
+    output_dir = "./output/DJI_202606031455_010_147DaNorthAg Base"
     group_image = tiff_tool.group_tiffs(data_dir)
     for band_name, band_path in group_image.items():
         if band_name not in multi_reflectance_functions.keys():

@@ -19,9 +19,7 @@ def test_read_single_exif_metadata():
     """Test EXIF metadata reading functionality"""
     import exiftool
 
-    file_path = (
-        "/home/algorithm/projects/img-arc/data/cd/DJI_20260423090852_0001_MS_G.TIF"
-    )
+    file_path = "./data/cd/DJI_20260423090852_0001_MS_G.TIF"
 
     with exiftool.ExifToolHelper() as et:
         metadata = et.get_metadata(file_path)
@@ -34,9 +32,7 @@ def test_read_multi_exif_metadata():
     import exiftool
     import numpy as np
 
-    file_path = [
-        "/home/algorithm/projects/img-arc/data/cd/DJI_20260423090852_0001_MS_G.TIF"
-    ]
+    file_path = ["./data/cd/DJI_20260423090852_0001_MS_G.TIF"]
 
     with exiftool.ExifToolHelper() as et:
         metadata = et.get_tags(
@@ -121,13 +117,9 @@ def test_copy_exif_metadata():
     import cv2
     import exiftool
 
-    output_path = (
-        "/home/algorithm/projects/img-arc/data/cd/DJI_20260423090852_0001_MS_G.TIF"
-    )
-    exif_file_path = "/home/algorithm/projects/img-arc/data/Henan Zhoukou Wheat—20260423—80m—Original Image—CD/DJI_20260423090852_0001_MS_G.TIF"
-    img_path = (
-        "/home/algorithm/projects/img-arc/data/cd/DJI_20260423090852_0001_MS_G_1.TIF"
-    )
+    output_path = "./data/cd/DJI_20260423090852_0001_MS_G.TIF"
+    exif_file_path = "./data/Henan Zhoukou Wheat—20260423—80m—Original Image—CD/DJI_20260423090852_0001_MS_G.TIF"
+    img_path = "./data/cd/DJI_20260423090852_0001_MS_G_1.TIF"
     with exiftool.ExifToolHelper() as et:
         et.execute(
             *[

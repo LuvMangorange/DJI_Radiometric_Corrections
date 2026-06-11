@@ -31,7 +31,7 @@ if current_dir not in sys.path:
 def test_detect_ocr_digit():
     """Test digit detection functionality"""
 
-    image_path = "/home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_RE.TIF"
+    image_path = "./data/DJI_202606021825_007/DJI_20260602182927_0002_MS_RE.TIF"
 
     if not os.path.exists(image_path):
         logger.error(f"Image file does not exist: {image_path}")
@@ -45,7 +45,7 @@ def test_detect_ocr_digit():
 def test_detect_panel():
     """Test panel detection functionality"""
 
-    image_path = "/home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182927_0002_MS_NIR.TIF"
+    image_path = "./data/DJI_202606021825_007/DJI_20260602182927_0002_MS_NIR.TIF"
 
     if not os.path.exists(image_path):
         logger.error(f"Image file does not exist: {image_path}")
@@ -59,7 +59,7 @@ def test_detect_panel():
 def test_get_reflectance():
     """Test reflectance retrieval functionality"""
 
-    image_path = "/home/algorithm/projects/img-arc/data/DJI_202606021825_007/DJI_20260602182924_0001_MS_G.TIF"
+    image_path = "./data/DJI_202606021825_007/DJI_20260602182924_0001_MS_G.TIF"
 
     if not os.path.exists(image_path):
         logger.error(f"Image file does not exist: {image_path}")
@@ -80,7 +80,7 @@ def test_get_reflectance():
 def test_take_closest_image():
     """Test closest target irradiance image retrieval functionality"""
 
-    data_dir = "/home/algorithm/projects/img-arc/data/cd"
+    data_dir = "./data/cd"
     closest_image = take_closest_image(data_dir)
     print(closest_image)
 
@@ -88,7 +88,7 @@ def test_take_closest_image():
 def test_fit_reflectance_functions():
     """Test reflectance function fitting functionality"""
 
-    data_dir = "/home/algorithm/projects/img-arc/data/DJI_202606021825_007"
+    data_dir = "./data/DJI_202606021825_007"
     closest_image = take_closest_image(data_dir)
     print(closest_image)
 
