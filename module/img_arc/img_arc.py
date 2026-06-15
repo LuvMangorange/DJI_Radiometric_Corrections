@@ -8,11 +8,13 @@ FilePath: /imgocr/module/img-arc/img_arc.py
 """
 
 import os
+import subprocess
 from typing import Optional, Tuple
 
 import cv2
 import exiftool
 import numpy as np
+from osgeo import gdal, gdal_array
 
 
 def get_normalized_params(bit_num=16):
@@ -354,7 +356,12 @@ def to_absolute_radiance_by_panel(
         if output_dir
         else file_path
     )
-    img_raw = cv2.imread(file_path, cv2.IMREAD_UNCHANGED)
+    # img_raw = cv2.imread(file_path, cv2.IMREAD_UNCHANGED)
+    src_ds = gdal.Open(file_path, gdal.GA_ReadOnly)
+    if src_ds is None:
+        raise FileNotFoundError(f"图片读取失败，请检查路径：{file_path}")
+    img_raw = gdal_array.DatasetReadAsArray(src_ds)  # type: ignore
+
     if img_raw is None:
         raise FileNotFoundError(f"图片读取失败，请检查路径：{file_path}")
     with exiftool.ExifToolHelper() as et:
@@ -410,6 +417,7 @@ def to_absolute_radiance_by_panel(
 
     irradiance = float(exif.get("XMP:Irradiance"))
 
+    # 1 暗电平
     img = black_level_correction(img=img_raw, black_level=black_level, bit_num=bit_num)
 
     # 2 曝光+增益
@@ -438,16 +446,38 @@ def to_absolute_radiance_by_panel(
     k, b, _, panel_irradiance = reflectance_function
     ref = img * panel_irradiance / irradiance * k + b
     # ref = np.clip(ref, 0, 1)
+    # ref = ref.astype(np.float32)
+    ref = np.round(ref * 65535.0).astype(np.uint16)
+    # cv2.imwrite(output_path, ref.astype(np.float32))
+    driver = gdal.GetDriverByName("GTiff")
+    x_size = src_ds.RasterXSize
+    y_size = src_ds.RasterYSize
 
-    cv2.imwrite(output_path, ref)
+    dst_ds = driver.Create(output_path, x_size, y_size, 1, gdal.GDT_UInt16)
+    dst_ds.SetGeoTransform(src_ds.GetGeoTransform())
+    dst_ds.SetProjection(src_ds.GetProjection())
+    meta_domains = src_ds.GetMetadataDomainList()
+    for domain in meta_domains:
+        meta_dict = src_ds.GetMetadata(domain)
+        dst_ds.SetMetadata(meta_dict, domain)
 
-    with exiftool.ExifToolHelper() as et:
-        et.execute(
-            *[
-                "-TagsFromFile",
-                file_path,
-                "-all:all",
-                "-overwrite_original",
-                output_path,
-            ]
-        )
+    band = dst_ds.GetRasterBand(1)
+    band.WriteArray(ref)
+
+    # band.SetNoDataValue(0.0)  # 你图像0为背景
+    # dst_ds.SetMetadataItem("COMPRESSION", "DEFLATE", "IMAGE_STRUCTURE")
+
+    dst_ds.FlushCache()
+    src_ds = None
+    dst_ds = None
+
+    cmd = [
+        "exiftool",
+        "-tagsfromfile",
+        file_path,
+        "-all:all",
+        "-preserve",
+        "-overwrite_original_in_place",
+        output_path,
+    ]
+    subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
