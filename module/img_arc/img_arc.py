@@ -410,7 +410,6 @@ def to_absolute_radiance_by_panel(
 
     irradiance = float(exif.get("XMP:Irradiance"))
 
-    # 1 暗电平
     img = black_level_correction(img=img_raw, black_level=black_level, bit_num=bit_num)
 
     # 2 曝光+增益
