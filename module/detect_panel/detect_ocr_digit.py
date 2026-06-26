@@ -1,6 +1,15 @@
 """
 Description: Do not edit
 Author: HuPengcheng
+Date: 2026-06-11 15:38:59
+LastEditors: HuPengcheng hpc0813@outlook.com
+LastEditTime: 2026-06-26 18:10:23
+FilePath: /DJI_Radiometric_Corrections/module/detect_panel/detect_ocr_digit.py
+"""
+
+"""
+Description: Do not edit
+Author: HuPengcheng
 Date: 2026-06-01 19:38:35
 LastEditors: HuPengcheng hpc0813@outlook.com
 LastEditTime: 2026-06-02 20:59:47
@@ -31,10 +40,10 @@ def detect_ocr_digit(
     scale = orig_h / height
 
     rect_list = tiff_tool.detect_rectangles(image=image_scaled, scale=scale)
-    # for rect in rect_list:
-    #     logger.info(f"Detected rectangle: {rect}")
-    #     bg = image_scaled.copy()
-    #     tiff_tool.show_image(bg, rect["cnt"])
+    for rect in rect_list:
+        logger.info(f"Detected rectangle: {rect}")
+        bg = image_scaled.copy()
+        tiff_tool.show_image(bg, rect["cnt"])
     logger.info(f"Detected {len(rect_list)} rectangles")
 
     if len(rect_list) < 1:

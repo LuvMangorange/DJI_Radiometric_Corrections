@@ -220,16 +220,16 @@ def to_radiance(
 
     cv2.imwrite(output_path, img)
 
-    with exiftool.ExifToolHelper() as et:
-        et.execute(
-            *[
-                "-TagsFromFile",
-                file_path,
-                "-all:all",
-                "-overwrite_original",
-                output_path,
-            ]
-        )
+    # with exiftool.ExifToolHelper() as et:
+    #     et.execute(
+    #         *[
+    #             "-TagsFromFile",
+    #             file_path,
+    #             "-all:all",
+    #             "-overwrite_original",
+    #             output_path,
+    #         ]
+    #     )
     return irradiance
 
 

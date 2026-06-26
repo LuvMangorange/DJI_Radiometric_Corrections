@@ -57,10 +57,8 @@ def test_absolute_radiance_by_panel():
     if current_dir not in sys.path:
         sys.path.append(current_dir)
 
-    cd_data_dir = (
-        "./147DaNorthAg Base Cotton-20260603-118m-Original Image/DJI_202606031422_008"
-    )
-    cd_output_dir = "./output/DJI_202606031422_008"
+    cd_data_dir = "/home/algorithm/Data/TMP/河南周口玉米—20260625—110米—原始影像/河南周口玉米—20260625—110米—原始影像—CD"
+    cd_output_dir = "/home/algorithm/Data/TMP/output"
     closest_image = take_closest_image(cd_data_dir)
     print(closest_image)
 
@@ -125,6 +123,7 @@ def test_absolute_radiance_by_panel():
         )
         logger.info(f"{band_name} fitting result: {fit_result}")
         multi_reflectance_functions[band_name] = (*fit_result, panel_irradiance)
+
     logger.info(f"multi_reflectance_functions: {multi_reflectance_functions}")
 
     data_dir = "./Downloads/147DaNorthAg Base Cotton-20260603-118m-Original Image/DJI_202606031455_010_147DaNorthAg Base"
