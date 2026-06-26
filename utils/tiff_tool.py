@@ -7,6 +7,7 @@ LastEditTime: 2026-05-25 14:22:34
 FilePath: /ocr-panel/utils/tiff_tool.py
 """
 
+import itertools
 import os
 from typing import Dict, List, Optional
 
@@ -122,7 +123,16 @@ class TiffTool:
                         }
                     )
 
-        return rect_list
+        best_group = []
+        min_total_diff = float("inf")
+        for group in itertools.combinations(rect_list, 4):
+            areas = [p["area"] for p in group]
+            total_diff = max(areas) - min(areas)
+            if total_diff < min_total_diff:
+                min_total_diff = total_diff
+                best_group = list(group)
+
+        return best_group
 
     @staticmethod
     def recognize_digit_in_roi(
